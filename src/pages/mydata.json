@@ -1,0 +1,128 @@
+[ 
+  {
+    "title": "BOOOOOOOM",
+    "info": "An authoritative voice in the new contemporary arts scene, highlighting emerging talents, and launching the careers of many young artists internationally.",
+    "img": "http://www.leejoonmo.com/drawerimg/method.png",
+    "url": "https://www.booooooom.com/",
+    "tag": ["Inspiration", "Creative"]
+  }, 
+  { 
+    "title": "DESK",
+    "info": "DESK is a project that shows desks of people who create",
+    "img": "http://www.leejoonmo.com/drawerimg/collins.png",
+    "url": "http://desk.cmiscm.com/#",
+    "tag": ["Inspiration", "Creative"]
+  }, 
+  {
+    "title": "pttrns",
+    "info": "The mother of all design resources.",
+    "img": "http://www.leejoonmo.com/drawerimg/pttrns.png",
+    "url": "https://pttrns.com/",
+    "tag": ["Curation", "UI/UX"]
+  }, 
+  {
+    "title": "SNAZZY MAPS",
+    "info": "Snazzy Maps is a repository of different styles for Google Maps aimed towards web designers and developers.",
+    "img": "http://www.leejoonmo.com/drawerimg/snazzymaps.png",
+    "url": "https://snazzymaps.com",
+    "tag": ["Map style", "UI/UX"]
+  }, 
+  {
+    "title": "UI Movement",
+    "info": "UI Movement started out as a newsletter that featured the best UI designs every day. It focus exclusively on UI designs.",
+    "img": "http://www.leejoonmo.com/drawerimg/uimovement.png",
+    "url": "https://uimovement.com/",
+    "tag": ["Curation", "UI/UX"]
+  }, 
+  
+
+  {
+    "title": "COLLECTUI",
+    "info": "Mobbin is a hand-picked collection of the latest mobile design patterns from apps that reflect the best in design.",
+    "img": "http://www.leejoonmo.com/drawerimg/collectui.png",
+    "url": "http://collectui.com/",
+    "tag": ["Curation", "UI/UX", ""]
+  }, 
+
+  {
+    "title": "Mobbin",
+    "info": "Mobbin is a hand-picked collection of the latest mobile design patterns from apps that reflect the best in design.",
+    "img": "http://www.leejoonmo.com/drawerimg/mobbin.png",
+    "url": "https://mobbin.design/",
+    "tag": ["Curation", "Service", ""]
+  }, 
+  {
+    "title": "awwwards",
+    "info": "The awards that recognize the talent and effort of the best web designers, developers and agencies in the world.",
+    "img": "http://www.leejoonmo.com/drawerimg/awwwards.png",
+    "url": "https://www.awwwards.com/",
+    "tag": ["Curation", "UI/UX", ""]
+  }, 
+  
+  {
+      "title": "Pentagram",
+      "info": "Pentagram is the world’s largest independently-owned design studio.",
+      "img": "http://www.leejoonmo.com/drawerimg/pentagram.png",
+      "url": "https://www.pentagram.com/",
+      "tag": ["Studio", "Branding", ""]
+    }, 
+  {
+    "title": "Turquoise",
+    "info": "Our management team brings a wealth of ability and experience to the creation and delivery of world-class branding projects. ",
+    "img": "http://www.leejoonmo.com/drawerimg/turquoise.png",
+    "url": "http://www.turquoisebranding.com",
+    "tag": ["Studio", "Branding", "England"]
+}, 
+  {
+    "title": "Method",
+    "info": "Create value and impact through the design of meaningful brands, digital products, and service experiences. ",
+    "img": "http://www.leejoonmo.com/drawerimg/method.png",
+    "url": "https://www.method.com/about",
+    "tag": ["Studio", "Branding", "USA_London"]
+},
+    {
+        "title": "BrandNew",
+        "info": "Brand New is a division of UnderConsideration, chronicling and providing opinions on corporate and brand identity work. ",
+        "img": "http://www.leejoonmo.com/drawerimg/brandnew.png",
+        "url": "https://www.underconsideration.com/brandnew",
+        "tag": ["Curation", "Branding", ""]
+    },
+    {
+        "title": "CFC",
+        "info": "CFC is seoul based multi-disciplinary design & photography studio focusing on branding & packaging.",
+        "img": "http://www.leejoonmo.com/drawerimg/cfc.png",
+        "url": "https://www.contentformcontext.com/",
+        "tag": ["Studio", "Branding", "Korea"],
+        "grade": 2
+      },
+      {
+        "title": "COLLINS",
+        "info": "An independent, brand experience design company.",
+        "img": "http://www.leejoonmo.com/drawerimg/collins.png",
+        "url": "https://www.wearecollins.com/",
+        "tag": ["Studio", "Branding", "USA"]
+      },
+      {
+        "title": "The First Penguin",
+        "info": "Design studio create space and brand.",
+        "img": "http://www.leejoonmo.com/drawerimg/thefirstpenguin.png",
+        "url": "http://t-fp.kr/about/",
+        "tag": ["Studio", "Branding", "Korea", "space"]
+      },
+      {
+        "title": "Chepter 1",
+        "info": "Select Shop for living, design",
+        "img": "http://www.leejoonmo.com/drawerimg/chapter1.png",
+        "url": "http://www.chapterone.kr/",
+        "tag": ["Shop", "Branding", "Korea"]
+      },
+      {
+        "title": "The Rivalry",
+        "info": "An independent, collaborative design studio.",
+        "img": "http://www.leejoonmo.com/drawerimg/therivalry.png",
+        "url": "http://therivalry.co/about",
+        "tag": ["Studio", "Branding", "USA"]
+      }
+      
+    
+]
