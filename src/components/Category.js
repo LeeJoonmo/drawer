@@ -46,11 +46,11 @@ class Category extends Component {
     
         this.state = {
             category: [
-                "All", "Studio", "Article/Post", "Etc"
+                "All", "Studio", "UI/UX", "Branding","Etc"
               ],
         };
-    
         this._categoryRemap = this._categoryRemap.bind(this);
+        this._setCategoryToParent = this._setCategoryToParent.bind();
     }
 
     _moveCategory(arr, old_index, new_index) {
@@ -70,10 +70,15 @@ class Category extends Component {
        return arr;
     }
 
-
+    _setCategoryToParent = (category) => {
+      this.props.setCategory(category);
+      console.log("insetcategorytop = "+category );
+    }
     _categoryRemap(e){
-        
+      
         const conText = e.target.textContent;
+        this._setCategoryToParent(conText);
+
         const targetIndex = this.state.category.indexOf(conText)
         const newCategory = this._moveCategory(this.state.category, targetIndex, 0)
         this.setState({
@@ -104,6 +109,7 @@ class Category extends Component {
                 <div className = "category-name-deselected" onClick={this._categoryRemap}>{this.state.category[1]}</div>
                 <div className = "category-name-deselected" onClick={this._categoryRemap}>{this.state.category[2]}</div>
                 <div className = "category-name-deselected" onClick={this._categoryRemap}>{this.state.category[3]}</div>
+                <div className = "category-name-deselected" onClick={this._categoryRemap}>{this.state.category[4]}</div>
             </div>
             </div>
       );

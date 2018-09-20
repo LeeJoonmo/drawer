@@ -1,9 +1,25 @@
 import React, { Component } from 'react';
 import 'shared/App.css';
 import {Link} from 'react-router-dom';
-import 'pages/About.css'
+import 'pages/About.css';
+import {Aboutfrom} from 'components';
+import Fade from 'react-reveal/Fade';
+
+var friendsData = require('./mydata.json');
 
 class About extends Component{
+    state = {
+        friends : friendsData.friends
+    }
+
+    _renderNames = () => {
+        console.log(this.props.name);
+        const friends = this.state.friends.map((friends, index) => {
+          return <Aboutfrom name = {friends.name} info = {friends.info} key = {index} />
+        });
+        return friends;
+        }
+
     render(){
         return(
             <div className = "about-contents">
@@ -12,20 +28,15 @@ class About extends Component{
                 drawer collects <br/>
                 inspirng bookmarks from<br/>
                 Respectable designers.<br/>
+                When you need to get inspiration,  <br/>
+            Please open this drawer.
             </div>
-            <div className = "about-bottomtext">
-            When you need inspiration or <br/>
-            when you need to widen your insight, <br/>
-            Please open this drawer.<br/>
+            <div className = "about-from">
+            from:<br></br>
             </div>
-            <div className = "about-thanks">
-            from<br></br>
-            JIYOEN  Product Designer <br/>
-            SOEKWON Designer<br/>
-            JOONMO Product Designer<br/>
-            And many another friends.<br/>
-            </div>
-
+            <Fade>
+            {this._renderNames()}
+            </Fade>
             </div>
             
         );
