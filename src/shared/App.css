@@ -21,6 +21,7 @@ body {
     justify-content: center;
     max-width:1280px;
     margin: 0 auto;
+    padding-top: 25px;
     
 }
 .about-page{
@@ -40,62 +41,42 @@ body {
 }
 .drawer-logo{
     text-align: center;
-    padding-bottom:0px;
+    padding-bottom:10px;
     margin:auto;
     padding-top:40px;
-    border-bottom: 1px solid transparent;
 }
 .header-bottom{
     display:flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
 }
-.category{
+
+.category-container{
     cursor: pointer;
     display: flex;
-    position: relative;
-}
 
-.category-tooltipbox{
-    position: absolute;
-    top:35px;
-    left:0px;
-    z-index: 1;
-    display: none;
-    background-color: white;
-    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);
 }
-.category-name-deselected{
-    width:120px;
-    padding-left:12px;
-    padding-right: 15px;
-    padding-top:12px;
-    padding-bottom: 12px;
-    color: #919191;
-    border-bottom: 1px solid transparent;
-    border-bottom-color: rgba(0,0,0,0.4)
-}
-
-.category-name-selected{
+.category-text{
+    color: inherit;
+    padding-top:10px;
+    padding-right:10px;
     padding-left: 10px;
-    padding-right: 15px;
-    padding-top:7px;
-    padding-bottom: 12px;
+    text-decoration: solid;
+}
+.category-text:hover{
+    text-decoration: underline;
 }
 
-.category-back{
-    cursor: pointer;
-    position: absolute;
-    width:50px;
-    height:50px;
-    margin-top:-55px;
+.category-text:active{
+    font-size:inherit;
+    font-weight: inherit;
 }
+
 
 .about-button{
     cursor: pointer;
     padding-right:12px;
-    padding-top:7px;
-    padding-bottom: 12px;
+    padding-top:10px;
+    padding-bottom: 10px;
     text-decoration: solid;
 }
 
@@ -110,8 +91,8 @@ body {
 
 .header-bottomline{
     width:100%;
-    height: 1px;
-    background-color: rgba(0,0,0,0.4);
+    height: 2px;
+    background-color: rgba(0,0,0,0.8);
 }
 
 

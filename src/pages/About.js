@@ -5,16 +5,15 @@ import 'pages/About.css';
 import {Aboutfrom} from 'components';
 import Fade from 'react-reveal/Fade';
 
-var friendsData = require('./mydata.json');
 
 class About extends Component{
     state = {
-        friends : friendsData.friends
+        friends : this.props.friends
     }
 
     _renderNames = () => {
-        console.log(this.props.name);
-        const friends = this.state.friends.map((friends, index) => {
+        console.log(this.props.friends);
+        const friends = this.props.friends.map((friends, index) => {
           return <Aboutfrom name = {friends.name} info = {friends.info} key = {index} />
         });
         return friends;

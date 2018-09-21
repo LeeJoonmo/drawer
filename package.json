@@ -6,6 +6,7 @@
     "ajv": "^6.5.3",
     "cross-env": "^5.2.0",
     "masonry-layout": "^4.2.2",
+    "query-string": "^6.1.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-masonry-component": "^6.2.1",

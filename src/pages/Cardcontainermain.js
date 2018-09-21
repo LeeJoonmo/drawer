@@ -4,10 +4,9 @@ import {Card} from 'components';
 import Fade from 'react-reveal/Fade';
 
 
-class Cardcontainer extends Component {
+class Cardcontainermain extends Component {
   state = {
     drawers: this.props.drawers,
-    isId: undefined
   }
   componentWillMount(){
 
@@ -28,8 +27,8 @@ class Cardcontainer extends Component {
       
 
   _renderCards(category){
-   const cardsArray = this.props.match.params.id === "all" || undefined ? this.state.drawers : this._filter(category);
-    //const cardsArray = this._filter(category) ;
+  // const cardsArray = this.props.match.params.id === "all" || undefined ? this.state.drawers : this._filter(category);
+    const cardsArray = this.state.drawers;
     const cards = cardsArray.map((cards, index) => {
       return <Card title = {cards.title} info = {cards.info} img = {cards.img} tag = {cards.tag} url = {cards.url} key = {index} />
     });
@@ -37,16 +36,16 @@ class Cardcontainer extends Component {
   }
 
   render(){
-      console.log(this.props.match.params.id);
+      console.log();
       return(
           <div className = "card-container" id = "card-container" >
-          
-              {this._renderCards(this.props.match.params.id)}
-        
+            <Fade>
+              {this._renderCards()}
+              </Fade>
 
           </div>
       );
 }
 }
 
-export default Cardcontainer;
+export default Cardcontainermain;

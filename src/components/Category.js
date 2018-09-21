@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import 'shared/App.css'
-
+import './Category.css'
+import { Link} from 'react-router-dom';
 
 var tooltipSwitch = true;
 function fadeOut(el){
@@ -40,18 +40,21 @@ function fadeOut(el){
     }
   }
 
+
+
 class Category extends Component {
     constructor(props) {
         super(props);
     
         this.state = {
             category: [
-                "All", "Studio", "UI/UX", "Branding","Etc"
+                "All", "studio", "UI/UX", "Branding","Etc"
               ],
         };
         this._categoryRemap = this._categoryRemap.bind(this);
-        this._setCategoryToParent = this._setCategoryToParent.bind();
+        
     }
+
 
     _moveCategory(arr, old_index, new_index) {
         while (old_index < 0) {
@@ -70,14 +73,10 @@ class Category extends Component {
        return arr;
     }
 
-    _setCategoryToParent = (category) => {
-      this.props.setCategory(category);
-      console.log("insetcategorytop = "+category );
-    }
+  
     _categoryRemap(e){
       
         const conText = e.target.textContent;
-        this._setCategoryToParent(conText);
 
         const targetIndex = this.state.category.indexOf(conText)
         const newCategory = this._moveCategory(this.state.category, targetIndex, 0)
@@ -103,10 +102,10 @@ class Category extends Component {
     render() {
       return (
         <div className = "category">
-            
             <div className = "category-name-selected">{this.state.category[0]}</div>
             <div className = "category-tooltipbox">
-                <div className = "category-name-deselected" onClick={this._categoryRemap}>{this.state.category[1]}</div>
+            
+                <Link to = {'/filter/ui'} className = "category-name-deselected">{this.state.category[1]}</Link>
                 <div className = "category-name-deselected" onClick={this._categoryRemap}>{this.state.category[2]}</div>
                 <div className = "category-name-deselected" onClick={this._categoryRemap}>{this.state.category[3]}</div>
                 <div className = "category-name-deselected" onClick={this._categoryRemap}>{this.state.category[4]}</div>
