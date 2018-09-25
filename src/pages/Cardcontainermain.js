@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import 'shared/App.css'
-import {Card} from 'components';
+import {Card, ScardContainer} from 'components';
 import Fade from 'react-reveal/Fade';
+
 
 
 class Cardcontainermain extends Component {
@@ -39,10 +40,10 @@ class Cardcontainermain extends Component {
       console.log();
       return(
           <div className = "card-container" id = "card-container" >
+            <ScardContainer></ScardContainer>
             <Fade>
               {this._renderCards()}
               </Fade>
-
           </div>
       );
 }

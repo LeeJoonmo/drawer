@@ -2,14 +2,33 @@ import React, { Component } from 'react';
 import {Cardcontainer, Cardcontainermain, About} from 'pages';
 import './App.css';
 import {Route, Switch, Link, NavLink} from 'react-router-dom';
+import bodymovin from 'bodymovin';
+import animationData from './logodata.json';
 
 var drawerData = require('./mydata.json');
+var logoAnimation;
 
 class App extends Component {
-
+  animationIsAttached = false;
+  scrollCheck = false;
 state = {
   drawers : drawerData.drawers,
   friends : drawerData.friends,
+}
+
+
+_attachAnimation = () => {
+  if (this.animationContainer !== undefined && !this.animationIsAttached) {
+    const animationProperties = {
+      container: this.animationContainer,
+      renderer: 'svg',
+      loop: false,
+      autoplay: true,
+      animationData: animationData
+    }
+
+    logoAnimation = bodymovin.loadAnimation(animationProperties);
+  }
 }
 
 _renderCardContainerMain = (props) =>{
@@ -31,16 +50,24 @@ _renderAbout = (props)=>{
 }
 
 componentDidMount() {
-  
+  this._attachAnimation();
+  window.addEventListener('scroll', () =>{
+    if (window.scrollY < 200 && this.scrollCheck === false){
+      logoAnimation.goToAndPlay(0);
+      this.scrollCheck = true;
+      console.log("100over");
+    }else if (window.scrollY >200 &&this.scrollCheck === true){
+      this.scrollCheck = false;
+      console.log("100under")};
+  });
 }
   
   render() {
         return(
           <div>
           <div className = "main">
-          <div className = "bar-left"></div>   <div className = "bar-right"></div>  
             <div className = "header" id = "header">
-              <div className = "drawer-logo" > <img className = "header-logo-img" src = {require('img/drawerlogo.png')} alt = "Hello"></img> </div>
+              <Link to = {'/'}> <div className = "drawer-logo" ref={(animationDiv) => { this.animationContainer = animationDiv;}}> </div></Link>
               <div className = "header-bottom">
                 <div className = "category-container">
                 <NavLink to = {'/main/all'} className = "category-text"   activeStyle={{fontWeight: 'bold'}}>All</NavLink>
@@ -50,7 +77,7 @@ componentDidMount() {
                 <NavLink to = {'/main/etc'} className = "category-text"   activeStyle={{fontWeight: 'bold'}}>Etc</NavLink>
 
                 </div>
-                <Link to = {'/about'} className = "about-button">About</Link>
+                <NavLink to = {'/about'} className = "about-button"   activeStyle={{fontWeight: 'bold'}}>About</NavLink>
               </div>
               <div className = "header-bottomline"></div>
               <Route exact path="/about" render = {this._renderAbout}/>

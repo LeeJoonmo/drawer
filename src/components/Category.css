@@ -30,10 +30,3 @@
     padding-bottom: 12px;
 }
 
-.category-back{
-    cursor: pointer;
-    position: absolute;
-    width:50px;
-    height:50px;
-    margin-top:-55px;
-}

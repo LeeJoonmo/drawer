@@ -33,3 +33,18 @@
     padding-left:0px;
 
 }
+
+.about-back{
+    position: absolute;
+    width:50%;
+    height:50px;
+    margin-top:-55px;
+    background-color:white;
+}
+.about-back-button{
+    padding-top:3px;
+    position: absolute;
+    width:42px;
+    height:42px;
+}
+

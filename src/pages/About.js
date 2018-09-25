@@ -1,16 +1,42 @@
 import React, { Component } from 'react';
 import 'shared/App.css';
-import {Link} from 'react-router-dom';
 import 'pages/About.css';
 import {Aboutfrom} from 'components';
 import Fade from 'react-reveal/Fade';
+import bodymovin from 'bodymovin';
+import animationData from './arrow.json';
+import {Link} from 'react-router-dom';
 
 
+var arrowAnimation;
 class About extends Component{
+    
+    animationIsAttached = false;
     state = {
         friends : this.props.friends
     }
 
+    _scrollCheck = () =>{
+       console.log("hi");
+    }
+
+    _attachAnimation = () => {
+        if (this.animationContainer !== undefined && !this.animationIsAttached) {
+          const animationProperties = {
+            container: this.animationContainer,
+            renderer: 'svg',
+            loop: false,
+            autoplay: true,
+            animationData: animationData
+          }
+  
+          arrowAnimation = bodymovin.loadAnimation(animationProperties);
+        }
+      }
+
+    componentDidMount(){
+        this._attachAnimation();
+    }
     _renderNames = () => {
         console.log(this.props.friends);
         const friends = this.props.friends.map((friends, index) => {
@@ -21,8 +47,15 @@ class About extends Component{
 
     render(){
         return(
+            
             <div className = "about-contents">
-            <Link to ={'/'} className = "category-back">.</Link>
+            <div className = "about-back">
+
+               <Link to ={'/'} className = "about-back-button" >
+               <div className = "about-arrow" ref={(animationDiv) => { this.animationContainer = animationDiv;}}> </div>
+               </Link>
+
+            </div>
             <div className = "about-uppertext">
                 drawer collects <br/>
                 inspirng bookmarks from<br/>
