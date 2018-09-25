@@ -17,18 +17,26 @@ class Cardcontainer extends Component {
 
 
   _filterFunction = (value) => {
-    return value.category[0] === this.props.category;
+    const tag = value.tag.includes("etc");
+    if(tag === true){
+      return value;
+    }
   }
 
-  _filter = (category) =>{
+  _filter = (tag) =>{
 
-  const result = this.props.drawers.filter(value => {return value.category[0] === category});
+  const result = this.props.drawers.filter(value => {
+    const tagCheck = value.tag.includes(tag);
+    if(tagCheck === true){
+      return value;
+    }
+  });
   return result;
   }
       
 
-  _renderCards(category){
-   const cardsArray = this.props.match.params.id === "all" || undefined ? this.state.drawers : this._filter(category);
+  _renderCards(tag){
+   const cardsArray = this.props.match.params.id === "all" || undefined ? this.state.drawers : this._filter(tag);
     //const cardsArray = this._filter(category) ;
     const cards = cardsArray.map((cards, index) => {
       return <Card title = {cards.title} info = {cards.info} img = {cards.img} tag = {cards.tag} url = {cards.url} key = {index} />
@@ -37,7 +45,6 @@ class Cardcontainer extends Component {
   }
 
   render(){
-      console.log(this.props.match.params.id);
       return(
           <div className = "card-container" id = "card-container" >
           

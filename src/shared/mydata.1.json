@@ -5,35 +5,40 @@
               "info": "An authoritative voice in the new contemporary arts scene, highlighting emerging talents of many young artists.",
               "img": "http://www.leejoonmo.com/drawerimg/method.png",
               "url": "https://www.booooooom.com/",
-              "tag": ["inspiration", "creative", "etc"]
+              "tag": ["Inspiration", "Creative"],
+              "category" : ["etc"]
             }, 
             { 
               "title": "DESK",
               "info": "DESK is a project that shows desks of people who create",
               "img": "http://www.leejoonmo.com/drawerimg/collins.png",
               "url": "http://desk.cmiscm.com/#",
-              "tag": ["inspiration", "creative", "etc"]
+              "tag": ["Inspiration", "Creative"],
+              "category" : ["etc"]
             }, 
             {
               "title": "pttrns",
               "info": "The mother of all design resources.",
               "img": "http://www.leejoonmo.com/drawerimg/pttrns.png",
               "url": "https://pttrns.com/",
-              "tag": ["curation", "UI/UX", "ui"]
+              "tag": ["Curation", "UI/UX"],
+              "category" : ["ui"]
             }, 
             {
               "title": "SNAZZY MAPS",
               "info": "Snazzy Maps is a repository of different styles for Google Maps aimed towards web designers and developers.",
               "img": "http://www.leejoonmo.com/drawerimg/snazzymaps.png",
               "url": "https://snazzymaps.com",
-              "tag": ["map style", "UI/UX", "etc"]
+              "tag": ["Map style", "UI/UX"],
+              "category" : ["etc"]
             }, 
             {
               "title": "UI Movement",
               "info": "UI Movement started out as a newsletter that featured the best UI designs every day. It focus exclusively on UI designs.",
               "img": "http://www.leejoonmo.com/drawerimg/uimovement.png",
               "url": "https://uimovement.com/",
-              "tag": ["curation", "UI/UX", "ui"]
+              "tag": ["Curation", "UI/UX"],
+              "category" : ["ui"]
             }, 
             
 
@@ -42,7 +47,8 @@
               "info": "Mobbin is a hand-picked collection of the latest mobile design patterns from apps that reflect the best in design.",
               "img": "http://www.leejoonmo.com/drawerimg/collectui.png",
               "url": "http://collectui.com/",
-              "tag": ["curation", "UI/UX", "ui"]
+              "tag": ["Curation", "UI/UX", ""],
+              "category" : ["ui"]
             }, 
 
             {
@@ -50,14 +56,16 @@
               "info": "Mobbin is a hand-picked collection of the latest mobile design patterns from apps that reflect the best in design.",
               "img": "http://www.leejoonmo.com/drawerimg/mobbin.png",
               "url": "https://mobbin.design/",
-              "tag": ["curation", "service", "etc"]
+              "tag": ["Curation", "Service", ""],
+              "category" : ["etc"]
             }, 
             {
               "title": "awwwards",
               "info": "The awards that recognize the talent and effort of the best web designers, developers and agencies in the world.",
               "img": "http://www.leejoonmo.com/drawerimg/awwwards.png",
               "url": "https://www.awwwards.com/",
-              "tag": ["curation", "UI/UX", "ui"]
+              "tag": ["Curation", "UI/UX", ""],
+              "category" : ["ui"]
             }, 
             
             {
@@ -65,69 +73,77 @@
                 "info": "Pentagram is the world’s largest independently-owned design studio.",
                 "img": "http://www.leejoonmo.com/drawerimg/pentagram.png",
                 "url": "https://www.pentagram.com/",
-                "tag": ["studio", "branding", ""]
+                "tag": ["Studio", "Branding", ""],
+                "category" : ["studio", "branding"]
               }, 
             {
               "title": "Turquoise",
               "info": "Our management team brings a wealth of ability and experience to the creation and delivery of world-class branding projects. ",
               "img": "http://www.leejoonmo.com/drawerimg/turquoise.png",
               "url": "http://www.turquoisebranding.com",
-              "tag": ["studio", "branding", "england"]
+              "tag": ["Studio", "Branding", "England"],
+              "category" : ["studio", "branding"]
           }, 
             {
               "title": "Method",
               "info": "Create value and impact through the design of meaningful brands, digital products, and service experiences. ",
               "img": "http://www.leejoonmo.com/drawerimg/method.png",
               "url": "https://www.method.com/about",
-              "tag": ["studio", "branding", "USA_London"]
+              "tag": ["Studio", "Branding", "USA_London"],
+              "category" : ["studio", "branding"]
           },
               {
                   "title": "BrandNew",
                   "info": "Brand New is a division of UnderConsideration, chronicling and providing opinions on corporate and brand identity work. ",
                   "img": "http://www.leejoonmo.com/drawerimg/brandnew.png",
                   "url": "https://www.underconsideration.com/brandnew",
-                  "tag": ["curation", "branding", ""]
+                  "tag": ["Curation", "Branding", ""],
+                  "category" : ["branding"]
               },
               {
                   "title": "CFC",
                   "info": "CFC is seoul based multi-disciplinary design & photography studio focusing on branding & packaging.",
                   "img": "http://www.leejoonmo.com/drawerimg/cfc.png",
                   "url": "https://www.contentformcontext.com/",
-                  "tag": ["studio", "branding", "korea"]
-
+                  "tag": ["Studio", "Branding", "Korea"],
+                  "category" : ["studio", "branding"]
                 },
                 {
                   "title": "COLLINS",
                   "info": "An independent, brand experience design company.",
                   "img": "http://www.leejoonmo.com/drawerimg/collins.png",
                   "url": "https://www.wearecollins.com/",
-                  "tag": ["studio", "branding", "USA"]
+                  "tag": ["Studio", "Branding", "USA"],
+                  "category" : ["studio", "branding"]
                 },
                 {
                   "title": "The First Penguin",
                   "info": "Design studio create space and brand.",
                   "img": "http://www.leejoonmo.com/drawerimg/thefirstpenguin.png",
                   "url": "http://t-fp.kr/about/",
-                  "tag": ["studio", "branding", "korea", "space"]
+                  "tag": ["Studio", "Branding", "Korea", "space"],
+                  "category" : ["studio", "branding"]
                 },
                 {
                   "title": "Chepter 1",
                   "info": "Select Shop for living, design",
                   "img": "http://www.leejoonmo.com/drawerimg/chapter1.png",
                   "url": "http://www.chapterone.kr/",
-                  "tag": ["shop", "branding", "etc"]
+                  "tag": ["Shop", "Branding"],
+                  "category": ["etc", "branding"]
                 },
                 {
                   "title": "The Rivalry",
                   "info": "An independent, collaborative design studio.",
                   "img": "http://www.leejoonmo.com/drawerimg/therivalry.png",
                   "url": "http://therivalry.co/about",
-                  "tag": ["studio", "branding", "USA"]
+                  "tag": ["Studio", "Branding", "USA"],
+                  "category": ["studio", "branding"]
                 }
               ],
     "friends": [
       {
-        "name": "Yundi",
+        "name": "Yoondi",
         "info": "Product Designer"
       },
       {
@@ -147,12 +163,8 @@
         "info": "BX Designer"
       },
       {
-        "name": "SeokwonKim",
+        "name": "Seokwon",
         "info": "Character Designer"
-      },
-      {
-        "name": "YounghoKim",
-        "info": "Product Designer"
       }
     ]
   }

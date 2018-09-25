@@ -55,10 +55,9 @@ componentDidMount() {
     if (window.scrollY < 200 && this.scrollCheck === false){
       logoAnimation.goToAndPlay(0);
       this.scrollCheck = true;
-      console.log("100over");
     }else if (window.scrollY >200 &&this.scrollCheck === true){
       this.scrollCheck = false;
-      console.log("100under")};
+      };
   });
 }
   
@@ -75,7 +74,6 @@ componentDidMount() {
                 <NavLink to = {'/main/ui'} className = "category-text"   activeStyle={{fontWeight: 'bold'}}>UI/UX</NavLink>
                 <NavLink to = {'/main/branding'} className = "category-text"   activeStyle={{fontWeight: 'bold'}}>Branding</NavLink>
                 <NavLink to = {'/main/etc'} className = "category-text"   activeStyle={{fontWeight: 'bold'}}>Etc</NavLink>
-
                 </div>
                 <NavLink to = {'/about'} className = "about-button"   activeStyle={{fontWeight: 'bold'}}>About</NavLink>
               </div>
