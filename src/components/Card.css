@@ -89,12 +89,24 @@ a{
     padding-bottom: 0px;
 }
 
+.scard-title{
+    color:#444444;
+    display:inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    border-bottom: 0px solid transparent;
+    border-bottom-color: rgba(0,0,0,0.4);
+    padding-top: 12px;
+    padding-bottom: 0px;
+}
+
 .card-info{
     padding-top:8px;
     font-size: 17px;
     line-height: 140%;
     
 }
+  
 
 .card-tag{
     padding-top:8px;

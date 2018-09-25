@@ -85,6 +85,12 @@ componentDidMount() {
             <Route exact path="/" render = {this._renderCardContainerMain}/>
            
           </Switch>
+          <div className = "footer">
+           <div className = "footer-say">
+            Good references make us happy :) 
+           </div>
+            drawer copyright@LeeJoonmo
+          </div>
           </div>
           </div>
         )

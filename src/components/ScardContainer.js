@@ -48,7 +48,7 @@ class ScardContainer extends Component {
           </div>  
 
                 
-        <div className = "card-title">Everything</div>
+        <div className = "scard-title">Quick link</div>
       </div>
 
      
