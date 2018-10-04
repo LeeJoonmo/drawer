@@ -66,7 +66,13 @@ componentDidMount() {
           <div>
           <div className = "main">
             <div className = "header" id = "header">
-              <Link to = {'/'}> <div className = "drawer-logo" ref={(animationDiv) => { this.animationContainer = animationDiv;}}> </div></Link>
+              
+                <div className = "drawer-logo-wrap">
+                <Link to = {'/'}> 
+                <div className = "drawer-logo" ref={(animationDiv) => { this.animationContainer = animationDiv;}}> </div>
+                 </Link>
+                 </div>
+             
               <div className = "header-bottom">
                 <div className = "category-container">
                 <NavLink to = {'/main/all'} className = "category-text"   activeStyle={{fontWeight: 'bold'}}>All</NavLink>

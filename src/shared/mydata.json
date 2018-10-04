@@ -1,17 +1,115 @@
 {
     "drawers" : [
+                    {
+                "title": "ohSeven",
+                "info": "Egon kkkkkkkk",
+                "img": "http://www.leejoonmo.com/drawerimg/ohseven.png",
+                "url": "http://ohsevenstudio.com/",
+                "tag": ["studio", "branding"]
+              }, 
               {
+                "title": "Android Device Size",
+                "info": "Size, Dimensions, Unit for all Android Devices",
+                "img": "http://www.leejoonmo.com/drawerimg/devices.png",
+                "url": "https://material.io/tools/devices/",
+                "tag": ["meterial", "UX/UI", "ui", "etc"]
+              }, 
+              {
+                "title": "Opentutorials",
+                "info": "Teaching programming free to anyone. It`s awesome",
+                "img": "http://www.leejoonmo.com/drawerimg/opentutorials.png",
+                "url": "https://opentutorials.org/",
+                "tag": ["developing", "study", "etc"]
+              }, 
+              {
+                "title": "Airbnb design",
+                "info": "Design influences everything we do at Airbnb.",
+                "img": "http://www.leejoonmo.com/drawerimg/airbnb.png",
+                "url": "https://airbnb.design/",
+                "tag": ["company", "branding", "ui"]
+              }, 
+              {
+                "title": "일상의 실천",
+                "info": "Everyday Practice is a graphic studio founded by Kwon Joonho, Kim Kyung-chul, Kim Eojin",
+                "img": "http://www.leejoonmo.com/drawerimg/everydaypractice.png",
+                "url": "http://everyday-practice.com/",
+                "tag": ["studio", "branding"]
+              }, 
+              {
+                "title": "Hjelle",
+                "info": "We are storytellers, and the chief ingredients in all our stories are form, quality and comfort.",
+                "img": "http://www.leejoonmo.com/drawerimg/hjelle.png",
+                "url": "https://hjelle.no/",
+                "tag": ["furniture", "studio"]
+              }, 
+              {
+                "title": "Jongmin Kim",
+                "info": "DEVELOPER, DESIGNER, MAKER",
+                "img": "http://www.leejoonmo.com/drawerimg/jongminkim.png",
+                "url": "http://blog.cmiscm.com/?cat=7",
+                "tag": ["Technic", "UI/UX", "etc", "ui"]
+              }, 
+              {
+                "title": "Uber Design",
+                "info": "The craft behind our design.",
+                "img": "http://www.leejoonmo.com/drawerimg/uberdesign.png",
+                "url": "https://www.uber.design/",
+                "tag": ["company", "branding", "UI/UX", "ui"]
+              }, 
+              {
+                "title": "uiGradients",
+                "info": "Hopefully this will help you draw inspiration and serve as a resource for picking gradients for your own projects.",
+                "img": "http://www.leejoonmo.com/drawerimg/uigradients.png",
+                "url": "https://uigradients.com/",
+                "tag": ["color", "UI/UX", "etc", "ui"]
+              }, 
+              {
+                "title": "Made by folk",
+                "info": "Made by Folk has always been about people. The people that make design and the people that buy it.",
+                "img": "http://www.leejoonmo.com/drawerimg/madebyfolk.png",
+                "url": "https://www.madebyfolk.com/",
+                "tag": ["curation", "inspiration", "etc"]
+              }, 
+              {
+                "title": "SWISSMISS",
+                "info": "Swissmiss is a design blog/studio run by Tina roth eisenberg a Swiss designer gone NYC",
+                "img": "http://www.leejoonmo.com/drawerimg/swissmiss.png",
+                "url": "https://www.swiss-miss.com/",
+                "tag": ["curation", "blog", "etc"]
+              }, 
+              {
+                "title": "HI FRUCTOSE",
+                "info": "Hi-Fructose focuses squarely on the art which transcends genre and trend.",
+                "img": "http://www.leejoonmo.com/drawerimg/hifructose.png",
+                "url": "https://hifructose.com/",
+                "tag": ["curation", "magazine", "etc", "art"]
+              }, 
+              {
+                "title": "Ordinary People",
+                "info": "We the ORDINARY PEOPLE aims for better, efficient and exact communication,by doing various and active experiments.",
+                "img": "http://www.leejoonmo.com/drawerimg/ordinarypeople.png",
+                "url": "https://ordinarypeople.kr/",
+                "tag": ["studio", "branding", "etc"]
+              }, 
+              {
+                "title": "It`s Nice That",
+                "info": "we want to open up this world to the widest possible audience.",
+                "img": "http://www.leejoonmo.com/drawerimg/itsnicethat.png",
+                "url": "https://www.itsnicethat.com/",
+                "tag": ["curation", "inspiration", "etc"]
+              }, 
+              {
+              "title": "Grafikano",
+              "info": "The graphic studio. There is no one like this in the universe",
+              "img": "http://www.leejoonmo.com/drawerimg/grafikano.png",
+              "url": "https://www.instagram.com/grafikano.920/",
+              "tag": ["studio", "branding", "etc"]
+            }, 
+            {
               "title": "BOOOOOOOM",
               "info": "An authoritative voice in the new contemporary arts scene, highlighting emerging talents of many young artists.",
-              "img": "http://www.leejoonmo.com/drawerimg/method.png",
+              "img": "http://www.leejoonmo.com/drawerimg/booooooom.png",
               "url": "https://www.booooooom.com/",
-              "tag": ["inspiration", "creative", "etc"]
-            }, 
-            { 
-              "title": "DESK",
-              "info": "DESK is a project that shows desks of people who create",
-              "img": "http://www.leejoonmo.com/drawerimg/collins.png",
-              "url": "http://desk.cmiscm.com/#",
               "tag": ["inspiration", "creative", "etc"]
             }, 
             {
@@ -139,11 +237,15 @@
         "info": "Product Designer"
       },
       {
-        "name": "Lako",
+        "name": "Grace",
         "info": "Product Designer"
       },
       {
-        "name": "kenzie",
+        "name": "Lako",
+        "info": "UX Designer"
+      },
+      {
+        "name": "Kenzie",
         "info": "BX Designer"
       },
       {
@@ -153,6 +255,19 @@
       {
         "name": "YounghoKim",
         "info": "Product Designer"
+      },
+      {
+        "name": "Erica Kim ",
+        "info": "BX Designer"
+      },
+      {
+        "name": "Hanee Nam",
+        "info": "Product Designer"
+      },
+      {
+        "name": "Egon Hong",
+        "info": "BX Designer"
       }
+
     ]
   }
